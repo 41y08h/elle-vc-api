@@ -263,8 +263,7 @@ async function main() {
 
   const port = parseInt(process.env.PORT!);
   io.listen(port || 5000);
-
-  console.log(`WS server started on port ${port}`);
+  console.log(`WS server started on port ${port || 5000}`);
 }
 
 main();
